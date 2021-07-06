@@ -99,7 +99,7 @@ const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setSpinner(false);
-    }, 2300);
+    }, 1500);
   }, []);
 
   return (

@@ -124,9 +124,10 @@ export const useStyles = makeStyles((theme) => ({
     "& img": {
       transition: "all .2s ease-in-out",
       width: "100%",
+      objectFit: "contain",
       maxWidth: "600px",
       borderRadius: "10px",
-      boxShadow: "2px 14px 12px -9px rgba(0,0,0,0.75)",
+      boxShadow: "2px 14px 12px -9px rgba(0,0,0,0.5)",
 
       "&:hover": {
         transform: "scale(1.03)",
@@ -134,7 +135,7 @@ export const useStyles = makeStyles((theme) => ({
       [theme.breakpoints.down("md")]: {
         width: "100%",
         height: "auto",
-        objectFit: "cover",
+        objectFit: "contain",
         display: "block",
         verticalAlign: "middle",
       },
